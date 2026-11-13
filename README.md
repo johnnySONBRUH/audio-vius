@@ -1,10 +1,10 @@
-# ESP32 Audio Spectrum Visualizer
+﻿# ESP32 Audio Spectrum Visualizer
 
 An embedded real-time audio spectrum analyzer built for the ESP32 platform. This project captures digital audio via an I2S microphone (e.g., INMP441), performs a Fast Fourier Transform (FFT) analysis to compute signal magnitude across frequency spectrums, and renders a 16-band visual bar graph with dynamic peak-hold indicators on an SSD1306 OLED display.
 
 ---
 
-## ?? Features
+## Features
 
 - **High-Quality I2S Sampling**: Captures 32-bit digital audio directly into DMA buffers at 16 kHz sampling frequency.
 - **Real-Time FFT Signal Processing**: Employs 512-point Fast Fourier Transform with Hamming windowing.
@@ -15,7 +15,7 @@ An embedded real-time audio spectrum analyzer built for the ESP32 platform. This
 
 ---
 
-## ??? Hardware Requirements
+## Hardware Requirements
 
 | Component | Recommendation / Model | Notes |
 | :--- | :--- | :--- |
@@ -26,7 +26,7 @@ An embedded real-time audio spectrum analyzer built for the ESP32 platform. This
 
 ---
 
-## ?? Wiring Diagram / Pinout
+## Wiring Diagram / Pinout
 
 ### 1. I2S Microphone Setup
 
@@ -52,7 +52,7 @@ An embedded real-time audio spectrum analyzer built for the ESP32 platform. This
 
 ---
 
-## ?? Software Dependencies & Setup
+## Software Dependencies & Setup
 
 ### Required Arduino Libraries
 
@@ -60,7 +60,7 @@ Ensure you have installed the following libraries via the **Arduino IDE Library 
 
 1. **Adafruit SSD1306** (by Adafruit)
 2. **Adafruit GFX Library** (by Adafruit)
-3. **rduinoFFT** (by kosme)
+3. **ArduinoFFT** (by kosme)
 
 ### Flashing Instructions
 
@@ -72,12 +72,12 @@ Ensure you have installed the following libraries via the **Arduino IDE Library 
 
 ---
 
-## ?? Technical Overview & Architecture
+## Technical Overview & Architecture
 
 For a deep-dive explanation on the project architecture, mathematical calculations (FFT, dB scaling), buffer management, and code execution flow, please refer to [TECHNICAL_DETAILS.md](TECHNICAL_DETAILS.md).
 
 ---
 
-## ?? License
+## License
 
 This project is open-source and available under the MIT License.
